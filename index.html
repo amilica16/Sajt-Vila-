@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vila Daca</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,1000" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header navbar-left">
+      <a class="navbar-brand fontA" href="#myPage">Vila Daca</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#pocetna">Pocetna</a></li>
+        <li><a href="#klenovica">Klenovica</a></li>
+        <li><a href="#villa">O Vili</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#apartmani">Apartmani<span class="caret"></span></a>
+         <ul class="dropdown-menu">
+           <li><a href="#">Apartman 2</a></li>
+           <li><a href="#">Apartman 4+1</a></li>
+           <li><a href="#">Apartman 4+2</a></li>
+         </ul>
+        </li>
+        <li><a href="#rez">Rezervacije</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="pocetna" class="jumbotron text-center">
+  <h1 style="font-family: 'Dancing Script', cursive;">Vila Daca</h1>
+  <p style="font-family: 'Dancing Script', cursive; font-size: 28px">Apartmani u Klenovici</p>
+</div>
+
+<div class="container slajd">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./galerija/0.jpg" alt="slika0" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./galerija/1.jpg" alt="slika0" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./galerija/2.jpg" alt="slika0" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./galerija/3.jpg" alt="slika0" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./galerija/4.jpg" alt="slika0" style="width:100%;">
+      </div>
+      <div class="item">
+        <img src="./galerija/5.jpg" alt="slika0" style="width:100%;">
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Prethodna</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Sledeca</span>
+    </a>
+  </div>
+</div>
+
+<div id="klenovica" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 style="text-align: center; font-family: 'Dancing Script', cursive; font-weight: 800;">Klenovica</h2><br>
+      <h4>Mir, idila i ugodjaj starog ribarskog naselja, smejštenog nedaleko od Novog Vinodolskog, mjesto idelano za sportove na vodi, sportski ribolov i ronjene a imate li plovilo, u lučici ćete naći siguran vez. Duž obale pružaju se pješčano-Šljunčane plaze, ljepa kupališta nalaze se, nedaleko, u prirodnim uvalam. Mogućmost smejštaja nudi se u aparmanima, sobama i u autokampu, a izvrsna ugostiteljska ponuda u restoranima, pizzeriji, caffe bar. Trgovine, turistička agencija, mjenačnjica i pošta upotpunjuju turističku ponudu.</h4>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center bg-grey">
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="./galerija/k00.jpg" alt="Paris">
+        <p><strong>Klenovica</strong></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="./galerija/k01.jpg" alt="New York">
+        <p><strong>Luka</strong></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="./galerija/k04.jpg" alt="San Francisco">
+        <p><strong>Plaža</strong></p>
+      </div>
+    </div>
+</div>
+
+<div id="villa" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2 style="font-family: 'Dancing Script', cursive;"><b>O Vili</h2><br>
+      <h4>Vila Daca se nalazi u Klenovici na udaljenosti od mora 1000 metara od centruma 1200 metara od plaze 1200 metara. Svi apartmani u Vili su sa 3 zvjezdice, svi imaju pogled na more, svaki apartman ima svoju kuhinju i balkon sa pogledom na more. Poseduju klimu, grijanje, Sat tv. Parkplaz uz kucu. Apartman za 2 osobe ljep pogled na more. Apartman 4 plus 1  isto pogled na more. Apartman 4 plus 2 sa velikim dnevnim boravkom. Svi apartmani imaju kuhinje trepezarije. U kuhinjama sude frizider i sve sto je potrebno za kuhinju.</h4>
+    </div>
+    <div class="col-sm-4">
+     <img src="./galerija/vila.jpg" class="img-thumbnail" alt="Slika Vile" width="800" height="600">
+    </div>
+  </div>
+</div>
+
+<div id="pic">
+<div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="well">
+                    <div id="myCarousel" class="carousel fdi-Carousel slide">
+                     <!-- Carousel items -->
+                        <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
+                            <div class="carousel-inner onebyone-carosel">
+                                <div class="item active">
+                                    <div class="col-md-4">
+                                        <img src="./galerija/vila 8.jpg" class="img-responsive center-block">
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <img src="./A2/001.jpg" class="img-responsive center-block">
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <img src="./galerija/vila12.jpg" class="img-responsive center-block">
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <img src="./galerija/vila 6.jpg" class="img-responsive center-block">
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <img src="./galerija/vila10.jpg" class="img-responsive center-block">
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                       <img src="./galerija/vila 9.jpg" class="img-responsive center-block">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#eventCarousel" data-slide="prev"></a>
+                            <a class="right carousel-control" href="#eventCarousel" data-slide="next"></a>
+                        </div>
+                        <!--/carousel-inner-->
+                    </div><!--/myCarousel-->
+                </div><!--/well-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section id="apartmani">
+  <div class="page-header" id="feedback">
+    <h2 style="font-family: 'Dancing Script', cursive; font-size: 30px">Apartman 2</h2>
+</div>
+</section>
+<div class="row">
+    <div id="slA"  class="col-md-6 col-md-push-2 col-sm-6 col-sm-push-2">
+        <div class="carousel slide article-slide" id="article-photo-carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner cont-slider">
+                <div class="item active">
+                     <img alt="" title="" src="./A2/3.jpg">
+                </div>
+                <div class="item">
+                     <img alt="" title="" src="./A2/5.jpg">
+                </div>
+                <div class="item">
+                     <img alt="" title="" src="./A2/6.jpg">
+                </div>
+                <div class="item">
+                     <img alt="" title="" src="./A2/7.jpg">
+                </div>
+                <div class="item">
+                     <img alt="" title="" src="./A2/8.jpg">
+                </div>
+             </div>
+             <!-- Indicators -->
+             <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#article-photo-carousel">
+                     <img alt="" src="./A2/001.jpg">
+                </li>
+                <li class="" data-slide-to="1" data-target="#article-photo-carousel">
+                     <img alt="" src="./A2/003.jpg">
+                </li>
+                <li class="" data-slide-to="2" data-target="#article-photo-carousel">
+                     <img alt="" src="./A2/004.jpg">
+                </li>
+                <li class="" data-slide-to="3" data-target="#article-photo-carousel">
+                     <img alt="" src="./A2/005.jpg">
+                </li>
+                <li class="" data-slide-to="4" data-target="#article-photo-carousel">
+                     <img alt="" src="./A2/008.jpg">
+                </li>
+              </ol>
+          </div>
+    </div>
+
+    <div class="col-md-3 col-md-push-1 col-sm-3 col-sm-push-1">
+        <div class="sidebar-module sidebar-module-inset">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Apatman 2</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>od 01.01 - do 1.07</strong> 35€</p>
+          <p><strong>od 02.07 - do 31.08</strong> 40€</p>
+          <p><strong> od 10.09 - do 31.12 </strong> 35€</p>
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-lg">Rezerviši</button>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2" style="font-size: 22px">
+        DETALJI:
+    </div>
+    <div class="col-md-8" style="font-size: 18px ">
+     Aprtman za dvije osobe(25 m2). Aprtman poseduje terasu sa pogledom na more. Dozovljeni su kucni ljubimci.
+     <hr style="color: black">
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2" style="font-size: 22px">
+        Opremljenost:
+    </div>
+    <div class="col-md-2" style="font-size: 18px ">
+        <ul class="fa-ul">
+              <li><i class="fa-li fa fa-cutlery" aria-hidden="true"></i>Kuhinja</li>
+              <li><i class="fa-li fa fa-television" aria-hidden="true"></i>TV</li>
+              <li><i class="fa-li fa fa-snowflake-o" aria-hidden="true"></i>Klima</li>
+               <li><i class="fa-li fa fa-wifi" aria-hidden="true"></i>WiFi</li>
+          </ul>
+    </div>
+    <div class="col-md-2  col-md-push-1" style="font-size: 18px ">
+        <ul class="fa-ul">
+             <li><i class="fa-li fa fa-bath" aria-hidden="true"></i>Kupaonica</li>
+            <li><i class="fa-li fa fa-car" aria-hidden="true"></i>Parking</li>
+            <li><i class="fa-li fa fa-phone" aria-hidden="true"></i>Telefon</li>
+        </ul>
+    </div>
+  </div>
+   <hr style="color: black">
+</div>
+
+
+<section>
+  <div class="page-header" id="feedback">
+    <h2 style="font-family: 'Dancing Script', cursive; font-size: 30px">Apartman 4+1</h2>
+</div>
+</section>
+<div class="row">
+    <div id="slA"  class="col-md-6 col-md-push-2 col-sm-3 push-sm-9">
+        <div class="carousel slide article-slide" id="article-photo-carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner cont-slider">
+                <div class="item active">
+                     <img alt="" title="" src="http://placehold.it/600x400">
+                </div>
+                <div class="item">
+                     <img alt="" title="" src="http://placehold.it/600x400">
+                </div>
+                <div class="item">
+                     <img alt="" title="" src="http://placehold.it/600x400">
+                </div>
+                <div class="item">
+                     <img alt="" title="" src="http://placehold.it/600x400">
+                </div>
+             </div>
+             <!-- Indicators -->
+             <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#article-photo-carousel">
+                     <img alt="" src="http://placehold.it/250x180">
+                </li>
+                <li class="" data-slide-to="1" data-target="#article-photo-carousel">
+                     <img alt="" src="http://placehold.it/250x180">
+                </li>
+                <li class="" data-slide-to="2" data-target="#article-photo-carousel">
+                     <img alt="" src="http://placehold.it/250x180">
+                </li>
+                <li class="" data-slide-to="3" data-target="#article-photo-carousel">
+                     <img alt="" src="http://placehold.it/250x180">
+                </li>
+              </ol>
+          </div>
+    </div>
+
+
+    <div class="col-md-3 col-md-push-1 col-sm-3 col-sm-push-1">
+        <div class="sidebar-module sidebar-module-inset">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Apatman 4+1</h1>
+        </div>
+        <div class="panel-body">
+            <p><strong>od 01.01 - do 01.07</strong> 50€</p>
+            <p><strong>od 02.07 - do 31.08</strong> 60€</p>
+            <p><strong>od 10.09 - do 31.12 </strong> 55€</p>
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-lg">Rezerviši</button>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2" style="font-size: 22px">
+        DETALJI:
+    </div>
+    <div class="col-md-8" style="font-size: 18px ">
+        Apartman za četiri osobe plus pomoćni ležaj (42 m2). Aprtman poseduje terasu sa pogledom na more. Dozovljeni su kucni ljubimci.
+     <hr style="color: black">
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2" style="font-size: 22px">
+        Opremljenost:
+    </div>
+    <div class="col-md-2" style="font-size: 18px ">
+        <ul class="fa-ul">
+              <li><i class="fa-li fa fa-cutlery" aria-hidden="true"></i>Kuhinja</li>
+              <li><i class="fa-li fa fa-television" aria-hidden="true"></i>TV</li>
+              <li><i class="fa-li fa fa-snowflake-o" aria-hidden="true"></i>Klima</li>
+               <li><i class="fa-li fa fa-wifi" aria-hidden="true"></i>WiFi</li>
+          </ul>
+    </div>
+    <div class="col-md-2  col-md-push-1" style="font-size: 18px ">
+        <ul class="fa-ul">
+             <li><i class="fa-li fa fa-bath" aria-hidden="true"></i>Kupaonica</li>
+            <li><i class="fa-li fa fa-car" aria-hidden="true"></i>Parking</li>
+            <li><i class="fa-li fa fa-phone" aria-hidden="true"></i>Telefon</li>
+        </ul>
+    </div>
+  </div>
+   <hr style="color: black">
+</div>
+
+
+<section>
+  <div class="page-header" id="feedback">
+    <h2 style="font-family: 'Dancing Script', cursive; font-size: 30px">Apartman 4+2</h2>
+</div>
+</section>
+<div class="row">
+    <div id="slA"  class="col-md-6 col-md-push-2">
+        <div class="carousel slide article-slide" id="article-photo-carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner cont-slider">
+                <div class="item active">
+                     <img alt="" title="" src="http://placehold.it/600x400">
+                </div>
+                <div class="item">
+                     <img alt="" title="" src="http://placehold.it/600x400">
+                </div>
+                <div class="item">
+                     <img alt="" title="" src="http://placehold.it/600x400">
+                </div>
+                <div class="item">
+                     <img alt="" title="" src="http://placehold.it/600x400">
+                </div>
+             </div>
+             <!-- Indicators -->
+             <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#article-photo-carousel">
+                     <img alt="" src="http://placehold.it/250x180">
+                </li>
+                <li class="" data-slide-to="1" data-target="#article-photo-carousel">
+                     <img alt="" src="http://placehold.it/250x180">
+                </li>
+                <li class="" data-slide-to="2" data-target="#article-photo-carousel">
+                     <img alt="" src="http://placehold.it/250x180">
+                </li>
+                <li class="" data-slide-to="3" data-target="#article-photo-carousel">
+                     <img alt="" src="http://placehold.it/250x180">
+                </li>
+              </ol>
+          </div>
+    </div>
+
+    <div class="col-md-3 col-md-push-1">
+        <div class="sidebar-module sidebar-module-inset">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Apatman 4+2</h1>
+        </div>
+        <div class="panel-body">
+            <p><strong>od 01.01 - do 01.07</strong> 60€</p>
+            <p><strong>od 02.07 - do 31.08</strong> 70€</p>
+            <p><strong>od 10.09 - do 31.12 </strong> 60€</p>
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-lg">Rezerviši</button>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2" style="font-size: 22px">
+        DETALJI:
+    </div>
+    <div class="col-md-8" style="font-size: 18px ">
+        Apartman za četiri osobe plus dva pomoćna ležaja (67 m2). Aprtman poseduje terasu sa pogledom na more. Dozovljeni su kucni ljubimci.
+     <hr style="color: black">
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 " style="font-size: 22px">
+        Opremljenost:
+    </div>
+    <div class="col-md-2" style="font-size: 18px ">
+        <ul class="fa-ul">
+              <li><i class="fa-li fa fa-cutlery" aria-hidden="true"></i>Kuhinja</li>
+              <li><i class="fa-li fa fa-television" aria-hidden="true"></i>TV</li>
+              <li><i class="fa-li fa fa-snowflake-o" aria-hidden="true"></i>Klima</li>
+               <li><i class="fa-li fa fa-wifi" aria-hidden="true"></i>WiFi</li>
+          </ul>
+    </div>
+    <div class="col-md-2  col-md-push-1" style="font-size: 18px ">
+        <ul class="fa-ul">
+             <li><i class="fa-li fa fa-bath" aria-hidden="true"></i>Kupaonica</li>
+            <li><i class="fa-li fa fa-car" aria-hidden="true"></i>Parking</li>
+            <li><i class="fa-li fa fa-phone" aria-hidden="true"></i>Telefon</li>
+        </ul>
+    </div>
+  </div>
+   <hr style="color: black">
+</div>
+
+
+    <div>
+      <section>
+        <div class="page-header" id="feedback">
+          <h2>Utisci naših gostiju</h2>
+
+        <div class="row">
+          <div class="col-md-4">
+            <blockquote>
+              <p>Odlicna vila. Preporucio bi svima</p>
+              <footer>John doe</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote>
+              <p>Gostoprimstvo na nivou. Obavezno posetite</p>
+              <footer>John doe</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote>
+              <p>Prelep smjestaj. Pogled na more i ljubaznost su super</p>
+              <footer>John doe</footer>
+            </blockquote>
+          </div>
+        </div><!-- End row -->
+      </section>
+    </div><!--End Container-->
+
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">Kontakt</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Kontak i rezervacije</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Gornji Kalanji 14, 51252 Klenovica, Hrvatska</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +0041 76 341 51 83</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> dragica1717@hotmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+  <div class="container-fluid">
+    <iframe class="well well-sm col-xs-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15928.615925701008!2d14.842902813072412!3d45.109958281777885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476382c2b979c7eb%3A0x2600ad5153365bd2!2z0JrQu9C10L3QvtCy0LjRhtCwLCDQpdGA0LLQsNGC0YHQutCw!5e0!3m2!1ssr!2srs!4v1500834105311" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Idi na vrh stranice</p>
+</footer>
+<script>
+$(document).ready(function () {
+    $('#myCarousel').carousel({
+        interval: 10000
+    })
+    $('.fdi-Carousel .item').each(function () {
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        if (next.next().length > 0) {
+            next.next().children(':first-child').clone().appendTo($(this));
+        }
+        else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+        }
+    });
+});
+jQuery(document).ready(function($) {
+
+      $('#myC').carousel({
+              interval: 5000
+      });
+
+      $('#carousel-text').html($('#slide-content-0').html());
+
+      //Handles the carousel thumbnails
+     $('[id^=carousel-selector-]').click( function(){
+          var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+          var id = parseInt(id);
+          $('#myC').carousel(id);
+      });
+
+
+      // When the carousel slides, auto update the text
+      $('#myC').on('slid.bs.carousel', function (e) {
+               var id = $('.item.active').data('slide-number');
+              $('#carousel-text').html($('#slide-content-'+id).html());
+      });
+});
+</script>
+</body>
+</html>
