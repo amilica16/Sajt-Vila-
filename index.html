@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://momentjs.com/downloads/moment-with-locales.js"></script>
+  <script src="http://momentjs.com/downloads/moment-timezone-with-data.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
 </head>
@@ -27,100 +29,167 @@
         <li><a href="#pocetna">Pocetna</a></li>
         <li><a href="#klenovica">Klenovica</a></li>
         <li><a href="#villa">O Vili</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#apartmani">Apartmani<span class="caret"></span></a>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Apartmani<span class="caret"></span></a>
          <ul class="dropdown-menu">
            <li><a href="#">Apartman 2</a></li>
            <li><a href="#">Apartman 4+1</a></li>
            <li><a href="#">Apartman 4+2</a></li>
          </ul>
         </li>
-        <li><a href="#rez">Rezervacije</a></li>
+        <li><a href="#rez">Rezervacija</a></li>
         <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#lokacija">Lokacija</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div id="pocetna" class="jumbotron text-center">
-  <h1 style="font-family: 'Dancing Script', cursive;">Vila Daca</h1>
-  <p style="font-family: 'Dancing Script', cursive; font-size: 28px">Apartmani u Klenovici</p>
-</div>
+<div id="pocetna">
+  <div class="jumbotron text-center">
+    <h1 style="font-family: 'Dancing Script', cursive;">Vila Daca</h1>
+    <p style="font-family: 'Dancing Script', cursive; font-size: 28px">Apartmani u Klenovici</p>
+  </div>
+  <div class="container slajd">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+      </ol>
 
-<div class="container slajd">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-    </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./galerija/0.jpg" alt="slika0" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="./galerija/1.jpg" alt="slika0" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="./galerija/2.jpg" alt="slika0" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="./galerija/3.jpg" alt="slika0" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="./galerija/4.jpg" alt="slika0" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="./galerija/5.jpg" alt="slika0" style="width:100%;">
+        </div>
+      </div>
 
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="./galerija/0.jpg" alt="slika0" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="./galerija/1.jpg" alt="slika0" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="./galerija/2.jpg" alt="slika0" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="./galerija/3.jpg" alt="slika0" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="./galerija/4.jpg" alt="slika0" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="./galerija/5.jpg" alt="slika0" style="width:100%;">
-      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Prethodna</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Sledeca</span>
+      </a>
     </div>
-
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Prethodna</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Sledeca</span>
-    </a>
   </div>
 </div>
+
 
 <div id="klenovica" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-md-12">
       <h2 style="text-align: center; font-family: 'Dancing Script', cursive; font-weight: 800;">Klenovica</h2><br>
-      <h4>Mir, idila i ugodjaj starog ribarskog naselja, smejštenog nedaleko od Novog Vinodolskog, mjesto idelano za sportove na vodi, sportski ribolov i ronjene a imate li plovilo, u lučici ćete naći siguran vez. Duž obale pružaju se pješčano-Šljunčane plaze, ljepa kupališta nalaze se, nedaleko, u prirodnim uvalam. Mogućmost smejštaja nudi se u aparmanima, sobama i u autokampu, a izvrsna ugostiteljska ponuda u restoranima, pizzeriji, caffe bar. Trgovine, turistička agencija, mjenačnjica i pošta upotpunjuju turističku ponudu.</h4>
+      <h4>
+        <p>Klenovica je naselje 8km južno od Novog Vinodolskog, sastoji se od zaselaka Cvitkovići, Kalanji, Miletići i Žrnovica.
+        Prva tri zaselka nose nazive po obiteljima koje su se tu naselile potkraj XVII stojleća. Od Klenovice se proteže preko 100km dugi, slabo naseljeni pojas obale u ponožju planine Velebit.</p>
+        <p>Klenovica je udaljena samo 15 km od grada Senja zanog po kuli Nehaj, nalazi se u Primorsko - goranskoj županiji udaljena od grada Novi Vindolski nešto manje od 10km, no veliki utjecaj na Klenovicu ima upravo Ličko - senjska županija. Za one ljude koji na odmor idu da bi se odmorili, Klenovica je idealno mjesto.</p>
+        <p>Smještena sjeverno-zapadno od Senja, grada poznatog po buri, nije toliko eksponirana, več je mirno mjesto ya pobjeći od gradskih gužvi i žurbi.</p>
+        <p>Glavna specifičnost Klenovice su mjestimični izvori slatke vode u moru (najpoznatiji su u uvali Žrnovica). Mješanje slatke i slane vode poguduje razvoju flore i faune, pa je zona bogata ribom. Domaće stanovništvo se od pmativeka bavi ribarstvom, zidarstvom, a tek početkom 70-ih. godina ozbiljnije i turizmom koji je uz ribarstvo i ugostiteljstvo glavni izvor prihoda Klenovara. Plaže u klenovici su 2006. preuređene, te su dodana 3 mala mulića. Klenovica je toplo srdačno mjesto, dugih, veselih i gostoprimivih ljudi, mjesto gde se gosti i posjetitelji obavezno vraćaju i mjesto gde se stječu dobra i čvrsta prijateljstva, zato tko nije bio neka navrati i uvjeri se u ljepo ribarsko mjesto koje ima nadasve dušu.</p>
+        <p>U sezoni kroz nje prođe tisuće i tisuće stranaca: Slovenaca, Mađara, Njemaca, Čeha, Francuza, Poljaka, Talijana, Egleza, Švicaraca, pa čak i Šveđana. U Klnovici ljudi dolaze prvenstveno sa svojim obiteljima u potrazi za mirom. Uz veliku ponudu vrhunskih restorana, kafića, trgovinu, poštu i vrlo poznat kamp, Klnovica sadrži sve potrebon za pravi godišnji odmor.</p>
+        <p>Staze uz obalu kao stvorene su za večernje šetnje uz predive zalaske sunca, tihi šum valova i miris opojnog mora.
+        </p></h4>
     </div>
   </div>
+
+    <!-- <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./galerija/k00.jpg" alt="Paris">
+          <p><strong>Klenovica</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./galerija/k01.jpg" alt="New York">
+          <p><strong>Luka</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./galerija/k04.jpg" alt="San Francisco">
+          <p><strong>Plaža</strong></p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container mt40" style="text-align: center">
+    <section class="row">
+
+        <article class="col-xs-12 col-sm-6 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a target="_blank" href="./galerija/k00.jpg" class="zoom" data-type="image" data-toggle="lightbox">
+                        <img src="./galerija/k00.jpg" alt="Klenovica" />
+                        <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                    </a>
+                </div>
+                <div class="panel-footer">
+                    <h4 style="text: center">Klenovica</h4>
+                    <span class="pull-right">
+                    </span>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-xs-12 col-sm-6 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a target="_blank" href="./galerija/k01.jpg" class="zoom" data-type="image" data-toggle="lightbox">
+                        <img src="./galerija/k01.jpg" alt="Luka" />
+                        <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                    </a>
+                </div>
+                <div class="panel-footer">
+                    <h4 style="text: center">Luka</h4>
+                    <span class="pull-right">
+                    </span>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-xs-12 col-sm-6 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a target="_blank" href="./galerija/k04.jpg" class="zoom" data-type="image" data-toggle="lightbox">
+                        <img src="./galerija/k04.jpg" alt="Plaža" />
+                        <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                    </a>
+                </div>
+                <div class="panel-footer">
+                    <h4 style="text: center">Plaža</h4>
+                    <span class="pull-right">
+                    </span>
+                </div>
+            </div>
+        </article>                                           
+
+</section>
+</div>
+
 </div>
 
 <div class="container-fluid text-center bg-grey">
-  <div class="row text-center">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="./galerija/k00.jpg" alt="Paris">
-        <p><strong>Klenovica</strong></p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="./galerija/k01.jpg" alt="New York">
-        <p><strong>Luka</strong></p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="./galerija/k04.jpg" alt="San Francisco">
-        <p><strong>Plaža</strong></p>
-      </div>
-    </div>
-</div>
 
-<div id="villa" class="container-fluid">
+<div id="villa" class="container-fluid text-center">
   <div class="row">
     <div class="col-sm-8">
       <h2 style="font-family: 'Dancing Script', cursive;"><b>O Vili</h2><br>
@@ -132,13 +201,12 @@
   </div>
 </div>
 
-<div id="pic">
+<!-- div id="pic">
 <div class="container">
         <div class="row">
             <div class="span12">
                 <div class="well">
                     <div id="myCarousel" class="carousel fdi-Carousel slide">
-                     <!-- Carousel items -->
                         <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
                             <div class="carousel-inner onebyone-carosel">
                                 <div class="item active">
@@ -181,19 +249,21 @@
                             <a class="left carousel-control" href="#eventCarousel" data-slide="prev"></a>
                             <a class="right carousel-control" href="#eventCarousel" data-slide="next"></a>
                         </div>
-                        <!--/carousel-inner-->
-                    </div><!--/myCarousel-->
-                </div><!--/well-->
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+ -->
 
 
-<section id="apartmani">
+
+<section id="apartmani" class="text-center">
   <div class="page-header" id="feedback">
     <h2 style="font-family: 'Dancing Script', cursive; font-size: 30px">Apartman 2</h2>
-</div>
+  </div>
 </section>
 <div class="row">
     <div id="slA"  class="col-md-6 col-md-push-2 col-sm-6 col-sm-push-2">
@@ -485,6 +555,77 @@
 </div>
 
 
+
+<div id="rez">
+<div class="container">
+<div class="col-md-6 col-md-offset-3">
+    <div class="form-area">  
+        <form role="form">
+        <br style="clear:both">
+        <h3 style="margin-bottom: 25px; text-align: center;">Rezervacija</h3>
+        <div id="datepicker" class="calendar"></div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Ime i Prezime" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" name="emailid" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input type="mobile" class="form-control" id="mobile" name="contact" placeholder="Kontak Telefon" required>
+        </div>                  
+        
+      <div class="form-group">
+        <select name="branch" class="form-control">
+          <option name="branch" value="">--Izaberi Apartman--</option>
+          <option name="branch"  value="option1">Apartman 2</option>
+          <option name="branch"  value="option2" >Apartman 4+1</option>
+          <option name="branch"  value="option3">Apartman 4+2</option>
+        </select>
+      </div>
+    
+    <div class="form-group registration-date">
+     <label for="date1">Dolazak:</label>           
+    <div class="input-group registration-date-time" id="date1">
+     <span class="input-group-addon" id="basic-addon1">
+      <span class="glyphicon glyphicon-calendar" aria-hidden="true">
+      </span>
+     </span>
+    <input class="form-control" id="registration-date" type="date" name="appointdate">
+      <span class="input-group-addon" id="basic-addon1">
+      <span class="glyphicon glyphicon-time" aria-hidden="true">
+      </span>
+      </span>
+      <input class="form-control" id="registration-time" type="time" name="appointtime">
+    </div>
+    </div>
+
+    <div class="form-group registration-date">
+    <label for="date2">Odlazak:</label>            
+    <div class="input-group registration-date-time" id="date2">
+     <span class="input-group-addon" id="basic-addon1">
+      <span class="glyphicon glyphicon-calendar" aria-hidden="true">
+      </span>
+     </span>
+    <input class="form-control" id="registration-date" type="date" name="appointdate">
+      <span class="input-group-addon" id="basic-addon1">
+      <span class="glyphicon glyphicon-time" aria-hidden="true">
+      </span>
+      </span>
+      <input class="form-control" id="registration-time" type="time" name="appointtime">
+    </div>
+    </div>
+          
+    <div class="form-group">
+      <textarea class="form-control" type="textarea" id="message" placeholder="Upit" maxlength="140" rows="3" name="additional_services"></textarea>
+       <span class="help-block"><p id="characterLeft" class="help-block ">Dostigli ste limit</p></span>
+    </div>
+      <button type="submit" id="submit" name="submit" class="btn btn-primary pull-right">Rezerviši</button>
+    </form>
+    </div>
+</div>
+</div>
+</div>
+
     <div>
       <section>
         <div class="page-header" id="feedback">
@@ -494,30 +635,32 @@
           <div class="col-md-4">
             <blockquote>
               <p>Odlicna vila. Preporucio bi svima</p>
-              <footer>John doe</footer>
+              <footer>Dušan Milošević</footer>
             </blockquote>
           </div>
           <div class="col-md-4">
             <blockquote>
-              <p>Gostoprimstvo na nivou. Obavezno posetite</p>
-              <footer>John doe</footer>
+              <p>Gostoprimstvo na nivou. Obavezno posetite.</p>
+              <footer>Vesna Aleksić</footer>
             </blockquote>
           </div>
           <div class="col-md-4">
             <blockquote>
-              <p>Prelep smjestaj. Pogled na more i ljubaznost su super</p>
-              <footer>John doe</footer>
+              <p>Prelep smjestaj. Pogled na more i ljubaznost su super. Dolazimo ponovo.</p>
+              <footer>Marko Mitorvić</footer>
             </blockquote>
           </div>
         </div><!-- End row -->
       </section>
     </div><!--End Container-->
+</div>
 
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">Kontakt</h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>Kontak i rezervacije</p>
+      <p>Kontak osoba</p>
+      <p>Dragica Ristić Barukčić</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> Gornji Kalanji 14, 51252 Klenovica, Hrvatska</p>
       <p><span class="glyphicon glyphicon-phone"></span> +0041 76 341 51 83</p>
       <p><span class="glyphicon glyphicon-envelope"></span> dragica1717@hotmail.com</p>
@@ -525,16 +668,16 @@
     <div class="col-sm-7 slideanim">
       <div class="row">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input class="form-control" id="name" name="name" placeholder="Ime" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <input class="form-control" id="email" name="email" placeholder="Prezime" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Upit" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button class="btn btn-default pull-right" type="submit">Pošalji</button>
         </div>
       </div>
     </div>
@@ -542,7 +685,7 @@
 </div>
 
 <!-- Add Google Maps -->
-  <div class="container-fluid">
+  <div class="container-fluid" id="lokacija">
     <iframe class="well well-sm col-xs-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15928.615925701008!2d14.842902813072412!3d45.109958281777885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476382c2b979c7eb%3A0x2600ad5153365bd2!2z0JrQu9C10L3QvtCy0LjRhtCwLCDQpdGA0LLQsNGC0YHQutCw!5e0!3m2!1ssr!2srs!4v1500834105311" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 <footer class="container-fluid text-center">
