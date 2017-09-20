@@ -44,7 +44,7 @@ function addNow() {
 function stopNow() {
   clearTimeout(set);
 }
-$(document).ready(function(){ 
+$(document).ready(function(){
      addNow();
      stopNow();
     $('#characterLeft').text('još 140 karaktera');
@@ -54,26 +54,26 @@ $(document).ready(function(){
         if (len >= max) {
             $('#characterLeft').text('Dostigli ste limit');
             $('#characterLeft').addClass('red');
-            $('#btnSubmit').addClass('disabled');            
-        } 
+            $('#btnSubmit').addClass('disabled');
+        }
         else {
             var ch = max - len;
             $('#characterLeft').text(ch + ' ostalo karaktera');
             $('#btnSubmit').removeClass('disabled');
-            $('#characterLeft').removeClass('red');            
+            $('#characterLeft').removeClass('red');
         }
     });
-    
-    
+
+
     // process the form
     $('form').submit(function(event) {
         debugger;
 var checked = '';
 $("input[name='service[]']:checked").each(function ()
 {
-    checked = checked + $(this).val() + ','; 
+    checked = checked + $(this).val() + ',';
 });
-checked = checked.slice(0, -1); 
+checked = checked.slice(0, -1);
         // get the form data
         // there are many ways to get this data using jQuery (you can use the class or id also)
         var formData = {
@@ -104,7 +104,7 @@ console.log(formData);
             .done(function(data) {
 
                 // log data to the console so we can see
-                console.log(data); 
+                console.log(data);
 
                 // here we will handle errors and validation messages
             });
@@ -113,3 +113,24 @@ console.log(formData);
         event.preventDefault();
     });
 });
+
+//apartmanss slideshow
+;(function($){
+   $(document).ready(function() {
+    $('.information_menu').find('li').hover(function(e) {
+         $('.information_menu').find('li').removeClass('active');
+        $(this).addClass('active');
+        $(".overlay-item").removeClass("active");
+        $(".overlay-item").removeClass("inactive");
+		$(".overlay-id"+$(this).data("id")).addClass("active").removeClass("inactive");
+
+         $(".overlay-id"+$(this).data("id")).prev().addClass("inactive")
+    });
+
+    $('.slideshow').children().on('mouseleave',function(e) {
+		$(this).removeClass("active");
+	});
+
+    $('.carousel').carousel();
+   });
+})(jQuery);
