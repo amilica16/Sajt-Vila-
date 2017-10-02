@@ -65,9 +65,9 @@ $(document).ready(function(){
     });
 
 
-    // process the form
-    $('form').submit(function(event) {
-        debugger;
+// process the form
+$('form').submit(function(event) {
+debugger;
 var checked = '';
 $("input[name='service[]']:checked").each(function ()
 {
@@ -77,30 +77,29 @@ checked = checked.slice(0, -1);
         // get the form data
         // there are many ways to get this data using jQuery (you can use the class or id also)
         var formData = {
-              "venueid":"55",
-            'name'              : $('input[name=name]').val(),
-            'emailid'             : $('input[name=emailid]').val(),
-            'contact'    : $('input[name=contact]').val(),
-  "gender":$('.active input[name=gender]').val(),
+            "venueid":"55",
+            'Ime':$('input[name=name]').val(),
+            'Email':$('input[name=emailid]').val(),
+            'Kontakt':$('input[name=contact]').val(),
         //"appointdate":"2015/11/23",
-  //"appointtime":"13:00",
-  "appointdate":$('input[name=appointdate]').val(),
-  "appointtime":$('input[name=appointtime]').val(),
-  "branch":$('select[name=branch]').val(),
-  "allservices":checked,
-  "additional_services":$('textarea[name=additional_services]').val(),
-
+        //"appointtime":"13:00",
+        "Datum dolaska":$('input[name=appointdate]').val(),
+        "Vreme dolaska":$('input[name=appointtime]').val(),
+        "Datum odlaska":$('input[name=appointdate1]').val(),
+        "Vreme odlaska":$('input[name=appointtime1]').val(),
+        "Aprtman":$('select[name=branch]').val(),
+        "Upit":$('textarea[name=additional_services]').val(),
         };
 console.log(formData);
         // process the form
         $.ajax({
-            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : 'http://laravel.bonsoul.com/create_walkin_appointmentfb', // the url where we want to POST
-            data        : JSON.stringify(formData), // our data object
-            dataType    : 'json', // what type of data do we expect back from the server
-                        encode          : true
+            type:'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url:'', // the url where we want to POST
+            data:JSON.stringify(formData), // our data object
+            dataType:'json', // what type of data do we expect back from the server
+            encode:true
         })
-            // using the done promise callback
+          // using the done promise callback
             .done(function(data) {
 
                 // log data to the console so we can see
